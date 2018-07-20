@@ -4,7 +4,7 @@ wget http://github.com/opscode/chef-repo/tarball/master
 mkdir /root/chef-repo
 tar -zxf master -C /root/
 mv /root/chef-boneyard*/* /root/chef-repo/
-rm master chef-boneyard* -rf
+rm /root/master /root/chef-boneyard* -rf
 cd /root/chef-repo/
 mkdir .chef
 echo "cookbook_path [ '/root/chef-repo/cookbooks' ]" > .chef/knife.rb
